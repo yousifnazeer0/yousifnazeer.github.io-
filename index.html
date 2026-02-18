@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yousif Nazeer | Mathematics & AI</title>
+    <title>Projects | Yousif Nazeer</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Icons -->
@@ -80,179 +80,97 @@
             padding: 6rem 2rem 3rem;
         }
 
-        /* Glass Card Effect */
-        .glass-card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 24px;
-            padding: 2.5rem;
-            margin-bottom: 2rem;
-            transition: transform 0.3s;
-        }
-
-        .glass-card:hover {
-            transform: translateY(-5px);
-            border-color: #3b82f6;
-        }
-
-        /* Hero Section */
-        .hero {
-            min-height: 60vh;
-            display: flex;
-            align-items: center;
-        }
-
-        .hero-content h1 {
-            font-size: 4rem;
+        /* Page Title */
+        .page-title {
+            font-size: 2.5rem;
             font-weight: 700;
-            margin-bottom: 0.5rem;
+            margin-bottom: 2rem;
             background: linear-gradient(135deg, #fff, #94a3b8);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            text-align: center;
         }
 
-        .hero-content h1 span {
-            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .hero-subtitle {
-            font-size: 1.2rem;
-            color: #94a3b8;
-            margin-bottom: 2rem;
-        }
-
-        /* Buttons */
-        .btn {
-            display: inline-block;
-            padding: 0.8rem 2rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 500;
-            margin-right: 1rem;
-            transition: all 0.3s;
-        }
-
-        .btn-primary {
-            background: #3b82f6;
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background: #2563eb;
-            transform: scale(1.05);
-        }
-
-        .btn-outline {
-            border: 2px solid rgba(255,255,255,0.2);
-            color: white;
-        }
-
-        .btn-outline:hover {
-            border-color: #3b82f6;
-            background: rgba(59,130,246,0.1);
-        }
-
-        /* Skills Tags */
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 1.5rem;
-        }
-
-        .skill-tag {
-            background: rgba(59,130,246,0.1);
-            border: 1px solid rgba(59,130,246,0.3);
-            padding: 0.6rem 1.5rem;
-            border-radius: 50px;
-            font-size: 0.95rem;
-            transition: all 0.3s;
-        }
-
-        .skill-tag:hover {
-            background: #3b82f6;
-            transform: scale(1.05);
-        }
-
-        /* Why Hire Me Cards */
-        .reasons-grid {
+        /* Projects Grid */
+        .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .reason-card {
-            background: rgba(255,255,255,0.03);
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 20px;
-            padding: 1.8rem;
-            transition: all 0.3s;
-        }
-
-        .reason-card:hover {
-            border-color: #3b82f6;
-            transform: translateY(-5px);
-        }
-
-        .reason-icon {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: #3b82f6;
-        }
-
-        .reason-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 0.8rem;
-        }
-
-        .reason-desc {
-            color: #94a3b8;
-            font-size: 0.95rem;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
         }
 
         /* Project Card */
         .project-card {
-            background: rgba(30,41,59,0.6);
-            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 24px;
             padding: 2rem;
-            border-left: 4px solid #3b82f6;
+            transition: all 0.3s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            border-color: #3b82f6;
+            box-shadow: 0 20px 40px rgba(59,130,246,0.2);
         }
 
         .project-icon {
-            font-size: 2.5rem;
+            font-size: 3rem;
             color: #3b82f6;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #fff;
         }
 
         .status-badge {
             display: inline-block;
-            padding: 0.3rem 1rem;
+            padding: 0.4rem 1.2rem;
             background: rgba(59,130,246,0.1);
             border: 1px solid #3b82f6;
             border-radius: 50px;
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             margin: 1rem 0;
+            align-self: flex-start;
         }
 
-        /* Footer */
+        .project-desc {
+            color: #94a3b8;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .tech-stack {
+            color: #3b82f6;
+            font-size: 0.95rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
         footer {
             text-align: center;
             padding: 2rem;
             color: #64748b;
             border-top: 1px solid rgba(255,255,255,0.1);
-            margin-top: 3rem;
+            margin-top: 4rem;
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
-            .hero-content h1 { font-size: 2.8rem; }
-            .nav-links { display: none; }
-            .reasons-grid { grid-template-columns: 1fr; }
+            .nav-links {
+                display: none;
+            }
+            .page-title {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
@@ -263,118 +181,85 @@
     <nav class="navbar">
         <div class="logo">YOUSIF NAZEER</div>
         <div class="nav-links">
-            <a href="index.html" class="active">Home</a>
+            <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="index.html#contact">Contact</a>
         </div>
     </nav>
 
     <!-- Main Content -->
     <div class="container">
-        <!-- 1. Hero Section - Sirf Naam aur Tagline -->
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Yousif <span>Nazeer</span></h1>
-                <div class="hero-subtitle">
-                    Mathematics Student | AI Enthusiast | Future Quantitative Analyst
-                </div>
-                <div>
-                    <a href="#why-hire" class="btn btn-primary">Why Hire Me</a>
-                    <a href="#contact" class="btn btn-outline">Contact</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- 2. About Me Section -->
-        <section class="glass-card">
-            <h2 style="margin-bottom: 1.5rem;">About Me</h2>
-            <p style="color: #94a3b8; line-height: 1.8;">
-                I am a Mathematics student with a strong passion for Artificial Intelligence and Financial Mathematics. 
-                My academic journey has equipped me with a solid foundation in mathematical principles, which I am now 
-                applying to the exciting fields of AI and quantitative finance. I am particularly interested in how 
-                mathematical models can be used to solve complex problems in financial markets.
-            </p>
-        </section>
-
-        <!-- 3. Areas of Focus -->
-        <section class="glass-card">
-            <h2 style="margin-bottom: 1.5rem;">Areas of Focus</h2>
-            <div class="skills-container">
-                <span class="skill-tag">Mathematics</span>
-                <span class="skill-tag">Python Programming</span>
-                <span class="skill-tag">Artificial Intelligence</span>
-                <span class="skill-tag">Problem Solving</span>
-                <span class="skill-tag">Data Analysis</span>
-                <span class="skill-tag">Calculus</span>
-                <span class="skill-tag">Linear Algebra</span>
-                <span class="skill-tag">Probability & Statistics</span>
-                <span class="skill-tag">Mathematical Modeling</span>
-            </div>
-        </section>
-
-        <!-- 4. Why Hire Me Section -->
-        <section id="why-hire" class="glass-card">
-            <h2 style="margin-bottom: 2rem;">Why Hire Me</h2>
-            <div class="reasons-grid">
-                <!-- Reason 1 -->
-                <div class="reason-card">
-                    <div class="reason-icon">📊</div>
-                    <h3 class="reason-title">Strong Mathematical Foundation</h3>
-                    <p class="reason-desc">I am pursuing a degree in Mathematics with a focus on calculus, linear algebra, and probability theory, providing me with the analytical skills necessary for complex problem-solving.</p>
-                </div>
-
-                <!-- Reason 2 -->
-                <div class="reason-card">
-                    <div class="reason-icon">🤖</div>
-                    <h3 class="reason-title">Passionate About AI</h3>
-                    <p class="reason-desc">I have a deep interest in artificial intelligence and machine learning, and I am consistently expanding my knowledge through self-study and practical projects.</p>
-                </div>
-
-                <!-- Reason 3 -->
-                <div class="reason-card">
-                    <div class="reason-icon">⚡</div>
-                    <h3 class="reason-title">Quick Learner</h3>
-                    <p class="reason-desc">I possess the ability to rapidly grasp new concepts and technologies, allowing me to adapt quickly to new challenges and environments.</p>
-                </div>
-
-                <!-- Reason 4 -->
-                <div class="reason-card">
-                    <div class="reason-icon">🎯</div>
-                    <h3 class="reason-title">Goal-Oriented & Dedicated</h3>
-                    <p class="reason-desc">I am committed to achieving mastery in financial mathematics and AI through consistent effort, discipline, and a focus on continuous improvement.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 5. Featured Project - AI Agent -->
-        <section class="glass-card">
-            <h2 style="margin-bottom: 1.5rem;">Featured Project</h2>
+        <h1 class="page-title">My Projects</h1>
+        
+        <div class="projects-grid">
+            <!-- Project 1: AI Agent (Main Project) -->
             <div class="project-card">
                 <div class="project-icon">🤖</div>
-                <h3 style="margin-bottom: 0.5rem;">AI Agent Development</h3>
-                <span class="status-badge">In Progress</span>
-                <p style="color: #94a3b8; margin: 1.5rem 0;">
-                    I am currently developing an intelligent AI agent that integrates mathematical principles with machine learning techniques. 
-                    This project serves as a practical application of my mathematical knowledge and programming skills, with the goal of creating 
-                    a system capable of understanding and responding to various inputs.
+                <h3 class="project-title">AI Agent Development</h3>
+                <span class="status-badge">⚡ In Progress</span>
+                <p class="project-desc">
+                    Developing an intelligent AI agent that integrates mathematical principles with machine learning techniques. 
+                    The agent is designed to understand and respond to various inputs, serving as a practical application of 
+                    my mathematical knowledge and programming skills. This project represents my main focus area where I combine 
+                    theoretical mathematics with practical AI implementation.
                 </p>
-                <div style="color: #3b82f6;">Technologies: Python, Mathematics, Machine Learning Concepts</div>
+                <div class="tech-stack">
+                    <i class="fas fa-code" style="margin-right: 0.5rem;"></i> 
+                    Python · Mathematics · Machine Learning Concepts
+                </div>
             </div>
-        </section>
 
-        <!-- 6. Contact Section -->
-        <section id="contact" class="glass-card" style="text-align: center;">
-            <h2 style="margin-bottom: 1.5rem;">Contact Me</h2>
-            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-                <a href="mailto:yousifnazeer408@gmail.com" style="color: white; text-decoration: none; padding: 0.8rem 1.5rem; background: rgba(59,130,246,0.1); border-radius: 50px; display: flex; align-items: center; gap: 0.5rem;">
-                    <i class="fas fa-envelope" style="color: #3b82f6;"></i> yousifnazeer408@gmail.com
-                </a>
-                <a href="https://linkedin.com/in/yousifnazeer" target="_blank" style="color: white; text-decoration: none; padding: 0.8rem 1.5rem; background: rgba(59,130,246,0.1); border-radius: 50px; display: flex; align-items: center; gap: 0.5rem;">
-                    <i class="fab fa-linkedin" style="color: #3b82f6;"></i> LinkedIn
-                </a>
+            <!-- Project 2: Mathematical Modeling -->
+            <div class="project-card">
+                <div class="project-icon">📐</div>
+                <h3 class="project-title">Mathematical Modeling</h3>
+                <span class="status-badge">📚 In Progress</span>
+                <p class="project-desc">
+                    Exploring various mathematical models and their applications in finance and artificial intelligence. 
+                    This project involves implementing mathematical concepts in Python to solve real-world problems. I am 
+                    particularly focused on differential equations, optimization techniques, and their applications in 
+                    financial modeling.
+                </p>
+                <div class="tech-stack">
+                    <i class="fas fa-code" style="margin-right: 0.5rem;"></i> 
+                    Calculus · Linear Algebra · Python · Probability
+                </div>
             </div>
-        </section>
+
+            <!-- Project 3: Python for Data Analysis -->
+            <div class="project-card">
+                <div class="project-icon">🐍</div>
+                <h3 class="project-title">Python for Data Analysis</h3>
+                <span class="status-badge">📊 Learning</span>
+                <p class="project-desc">
+                    Building practical Python scripts to analyze data and solve mathematical problems. 
+                    This project helps strengthen my programming skills while applying mathematical concepts 
+                    to real datasets. I am learning to use Python libraries for data manipulation, statistical 
+                    analysis, and visualization.
+                </p>
+                <div class="tech-stack">
+                    <i class="fas fa-code" style="margin-right: 0.5rem;"></i> 
+                    Python · Jupyter · NumPy · Data Analysis
+                </div>
+            </div>
+
+            <!-- Project 4: Financial Mathematics Study -->
+            <div class="project-card">
+                <div class="project-icon">📈</div>
+                <h3 class="project-title">Financial Mathematics Study</h3>
+                <span class="status-badge">📖 Studying</span>
+                <p class="project-desc">
+                    Deepening my understanding of financial mathematics concepts including options pricing, 
+                    risk management, and quantitative analysis. This self-study project involves learning about 
+                    Black-Scholes model, binomial trees, and other fundamental concepts in mathematical finance.
+                </p>
+                <div class="tech-stack">
+                    <i class="fas fa-code" style="margin-right: 0.5rem;"></i> 
+                    Options Theory · Probability · Stochastic Calculus
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer>
@@ -399,15 +284,6 @@
                 },
                 move: { enable: true, speed: 2 }
             }
-        });
-
-        // Smooth Scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) target.scrollIntoView({ behavior: 'smooth' });
-            });
         });
     </script>
 </body>
