@@ -396,3 +396,323 @@
     </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Yousif Nazeer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background: #0a0f1e; color: #fff; }
+        #particles-js { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background: #0a0f1e; }
+        
+        .navbar {
+            position: fixed; top: 0; width: 100%; padding: 1.2rem 5%;
+            background: rgba(10, 15, 30, 0.9); backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,0.1); z-index: 1000;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        
+        .logo { font-size: 1.8rem; font-weight: 700; color: #3b82f6; }
+        
+        .nav-links { display: flex; gap: 2rem; }
+        .nav-links a { color: #fff; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: #3b82f6; }
+        
+        .container { max-width: 1100px; margin: 0 auto; padding: 6rem 2rem 3rem; }
+        
+        .glass-card {
+            background: rgba(255,255,255,0.05); backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1); border-radius: 30px;
+            padding: 2.5rem; margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            color: #3b82f6;
+        }
+        
+        .about-text {
+            color: #94a3b8;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .skill-item {
+            background: rgba(59,130,246,0.1);
+            border: 1px solid rgba(59,130,246,0.3);
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.95rem;
+        }
+        
+        .education-item {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            border-left: 3px solid #3b82f6;
+        }
+        
+        .education-item h3 { font-size: 1.2rem; margin-bottom: 0.3rem; }
+        .education-item p { color: #94a3b8; }
+        
+        footer {
+            text-align: center; padding: 2rem; color: #64748b;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <nav class="navbar">
+        <div class="logo">YN</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <!-- About Me -->
+        <div class="glass-card">
+            <h2 class="section-title">📋 About Me</h2>
+            <p class="about-text">
+                I am a BS Mathematics student with a passion for Artificial Intelligence and Financial Mathematics. 
+                Currently in my learning phase, I'm building a strong foundation in mathematics while exploring 
+                the world of AI and programming.
+            </p>
+            <p class="about-text">
+                My goal is to combine my mathematical knowledge with AI to solve real-world problems, 
+                particularly in the field of finance. I'm currently learning Python and working on small 
+                projects to strengthen my skills.
+            </p>
+        </div>
+        
+        <!-- Education -->
+        <div class="glass-card">
+            <h2 class="section-title">🎓 Education</h2>
+            <div class="education-item">
+                <h3>BS Mathematics</h3>
+                <p>Current Student | 2023 - Present</p>
+                <p style="margin-top: 0.5rem;">Focus Areas: Calculus, Linear Algebra, Probability, Statistics</p>
+            </div>
+        </div>
+        
+        <!-- Skills - HONEST Version -->
+        <div class="glass-card">
+            <h2 class="section-title">📚 Current Focus</h2>
+            <div class="skills-container">
+                <span class="skill-item">📐 Calculus</span>
+                <span class="skill-item">📈 Linear Algebra</span>
+                <span class="skill-item">📊 Probability</span>
+                <span class="skill-item">🔢 Statistics</span>
+                <span class="skill-item">🐍 Python (Learning)</span>
+                <span class="skill-item">🤖 AI (Learning)</span>
+                <span class="skill-item">💡 Problem Solving</span>
+                <span class="skill-item">📝 Mathematical Thinking</span>
+            </div>
+        </div>
+        
+        <!-- Interests -->
+        <div class="glass-card">
+            <h2 class="section-title">🌟 Interests</h2>
+            <div class="skills-container">
+                <span class="skill-item">Artificial Intelligence</span>
+                <span class="skill-item">Financial Mathematics</span>
+                <span class="skill-item">Options Trading</span>
+                <span class="skill-item">Machine Learning</span>
+                <span class="skill-item">Data Science</span>
+                <span class="skill-item">Quantitative Finance</span>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2026 Yousif Nazeer | BS Mathematics Student</p>
+    </footer>
+    
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 60 },
+                color: { value: "#3b82f6" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5 },
+                size: { value: 3 },
+                line_linked: { enable: true, distance: 150, color: "#3b82f6", opacity: 0.3, width: 1 },
+                move: { enable: true, speed: 2 }
+            }
+        });
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Yousif Nazeer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background: #0a0f1e; color: #fff; }
+        #particles-js { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background: #0a0f1e; }
+        
+        .navbar {
+            position: fixed; top: 0; width: 100%; padding: 1.2rem 5%;
+            background: rgba(10, 15, 30, 0.9); backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,0.1); z-index: 1000;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        
+        .logo { font-size: 1.8rem; font-weight: 700; color: #3b82f6; }
+        
+        .nav-links { display: flex; gap: 2rem; }
+        .nav-links a { color: #fff; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: #3b82f6; }
+        
+        .container { max-width: 1100px; margin: 0 auto; padding: 6rem 2rem 3rem; }
+        
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #3b82f6;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .project-card {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: #3b82f6;
+        }
+        
+        .project-icon {
+            font-size: 2.5rem;
+            color: #3b82f6;
+            margin-bottom: 1rem;
+        }
+        
+        .project-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-status {
+            display: inline-block;
+            padding: 0.3rem 1rem;
+            background: rgba(59,130,246,0.1);
+            border: 1px solid #3b82f6;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            margin: 1rem 0;
+        }
+        
+        .project-desc {
+            color: #94a3b8;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        
+        footer {
+            text-align: center; padding: 2rem; color: #64748b;
+            border-top: 1px solid rgba(255,255,255,0.1); margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <nav class="navbar">
+        <div class="logo">YN</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h2 class="section-title">🚀 My Learning Projects</h2>
+        
+        <div class="projects-grid">
+            <!-- Project 1: AI Agent (Main Project) -->
+            <div class="project-card">
+                <div class="project-icon">🤖</div>
+                <h3 class="project-title">AI Agent - Learning Project</h3>
+                <span class="project-status">🔄 In Progress</span>
+                <p class="project-desc">Building my first AI agent to understand how AI models work. Learning about neural networks and basic AI concepts.</p>
+                <div style="color: #3b82f6;">Technologies: Python (Learning)</div>
+            </div>
+            
+            <!-- Project 2: Python Practice -->
+            <div class="project-card">
+                <div class="project-icon">🐍</div>
+                <h3 class="project-title">Python Practice Projects</h3>
+                <span class="project-status">📚 Learning</span>
+                <p class="project-desc">Solving mathematical problems using Python. Building small scripts to strengthen programming skills.</p>
+                <div style="color: #3b82f6;">Technologies: Python, Jupyter</div>
+            </div>
+            
+            <!-- Project 3: Mathematics Study -->
+            <div class="project-card">
+                <div class="project-icon">📐</div>
+                <h3 class="project-title">Mathematics Applications</h3>
+                <span class="project-status">📖 Studying</span>
+                <p class="project-desc">Exploring applications of calculus and linear algebra in finance and AI.</p>
+                <div style="color: #3b82f6;">Focus: Financial Mathematics</div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2026 Yousif Nazeer | Learning & Growing</p>
+    </footer>
+    
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 60 },
+                color: { value: "#3b82f6" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5 },
+                size: { value: 3 },
+                line_linked: { enable: true, distance: 150, color: "#3b82f6", opacity: 0.3, width: 1 },
+                move: { enable: true, speed: 2 }
+            }
+        });
+    </script>
+</body>
+</html>
