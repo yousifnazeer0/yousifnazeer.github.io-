@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Yousif Nazeer</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0f1e;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        /* Particles Background */
+        #particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: #0a0f1e;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 15, 30, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #3b82f6;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #3b82f6;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 6rem 2rem 3rem;
+        }
+
+        /* Glass Card Effect */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 24px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            border-color: #3b82f6;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: #fff;
+        }
+
+        .about-text {
+            color: #94a3b8;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-item {
+            background: rgba(59,130,246,0.1);
+            border: 1px solid rgba(59,130,246,0.3);
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+        }
+
+        .skill-item:hover {
+            background: #3b82f6;
+            transform: scale(1.05);
+        }
+
+        .education-item {
+            margin-bottom: 2rem;
+            padding-left: 1.5rem;
+            border-left: 4px solid #3b82f6;
+        }
+
+        .education-item h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .education-item p {
+            color: #94a3b8;
+            margin-bottom: 0.3rem;
+        }
+
+        .interest-item {
+            display: inline-block;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            margin: 0.3rem;
+            transition: all 0.3s;
+            font-size: 0.95rem;
+        }
+
+        .interest-item:hover {
+            border-color: #3b82f6;
+            background: rgba(59,130,246,0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #64748b;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">YOUSIF NAZEER</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- About Me Section -->
+        <div class="glass-card">
+            <h2>About Me</h2>
+            <p class="about-text">
+                I am a Mathematics student with a deep passion for Artificial Intelligence and Financial Mathematics. 
+                My academic journey has provided me with a solid foundation in mathematical principles, which I am now 
+                applying to the exciting fields of AI and quantitative finance.
+            </p>
+            <p class="about-text">
+                I believe in the power of mathematics to solve complex real-world problems, and I am dedicated to 
+                mastering the skills needed to bridge the gap between theoretical mathematics and practical AI applications. 
+                My goal is to contribute to the development of intelligent systems that can analyze and predict financial 
+                market behavior.
+            </p>
+        </div>
+
+        <!-- Education Section -->
+        <div class="glass-card">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Bachelor of Science in Mathematics</h3>
+                <p>2023 - Present</p>
+                <p style="margin-top: 0.8rem;">Core Focus Areas:</p>
+                <div class="skills-container" style="margin-top: 0.5rem;">
+                    <span class="skill-item">Calculus</span>
+                    <span class="skill-item">Linear Algebra</span>
+                    <span class="skill-item">Probability Theory</span>
+                    <span class="skill-item">Statistics</span>
+                    <span class="skill-item">Mathematical Modeling</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Areas of Focus Section -->
+        <div class="glass-card">
+            <h2>Areas of Focus</h2>
+            <div class="skills-container">
+                <span class="skill-item">Mathematics</span>
+                <span class="skill-item">Python Programming</span>
+                <span class="skill-item">Artificial Intelligence</span>
+                <span class="skill-item">Problem Solving</span>
+                <span class="skill-item">Data Analysis</span>
+                <span class="skill-item">Calculus</span>
+                <span class="skill-item">Linear Algebra</span>
+                <span class="skill-item">Probability & Statistics</span>
+                <span class="skill-item">Mathematical Modeling</span>
+                <span class="skill-item">Critical Thinking</span>
+                <span class="skill-item">Analytical Reasoning</span>
+                <span class="skill-item">Quantitative Analysis</span>
+            </div>
+        </div>
+
+        <!-- Professional Interests Section -->
+        <div class="glass-card">
+            <h2>Professional Interests</h2>
+            <div style="margin-top: 1rem;">
+                <span class="interest-item">Artificial Intelligence</span>
+                <span class="interest-item">Financial Mathematics</span>
+                <span class="interest-item">Options Trading</span>
+                <span class="interest-item">Machine Learning</span>
+                <span class="interest-item">Data Science</span>
+                <span class="interest-item">Quantitative Finance</span>
+                <span class="interest-item">Algorithmic Trading</span>
+                <span class="interest-item">Risk Management</span>
+                <span class="interest-item">Derivatives Pricing</span>
+                <span class="interest-item">Stochastic Calculus</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Yousif Nazeer | Mathematics & AI Portfolio</p>
+    </footer>
+
+    <script>
+        // Particles Configuration
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 60 },
+                color: { value: "#3b82f6" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5 },
+                size: { value: 3 },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#3b82f6",
+                    opacity: 0.3,
+                    width: 1
+                },
+                move: { enable: true, speed: 2 }
+            }
+        });
+    </script>
+</body>
+</html>
